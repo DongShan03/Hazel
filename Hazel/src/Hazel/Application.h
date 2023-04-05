@@ -4,7 +4,8 @@
 #include "Events/Event.h"
 
 namespace Hazel {
-	class __declspec(dllexport) Application
+
+	class HAZEL_API Application
 	{
 	public:
 		Application();
@@ -13,6 +14,7 @@ namespace Hazel {
 		void Run();
 	};
 
+	// To be defined in CLIENT
 	Application* CreateApplication();
-}
 
+}
