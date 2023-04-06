@@ -54,8 +54,7 @@ project "Hazel"
 		defines
 		{
 			"HZ_PLATFORM_WINDOWS",
-			"HZ_BUILD_DLL",
-			"HZ_ENABLE_ASSERTS"
+			"HZ_BUILD_DLL"
 		}
 
 		postbuildcommands
@@ -115,7 +114,7 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "HZ_DEBUG"
-		buildoptions "/MD"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"

@@ -1,6 +1,4 @@
-
 #include <Hazel.h>
-
 
 class ExampleLayer : public Hazel::Layer
 {
@@ -19,6 +17,7 @@ public:
 	{
 		HZ_TRACE("{0}", event);
 	}
+
 };
 
 class Sandbox : public Hazel::Application
@@ -33,6 +32,7 @@ public:
 	{
 
 	}
+
 };
 
 Hazel::Application* Hazel::CreateApplication()
